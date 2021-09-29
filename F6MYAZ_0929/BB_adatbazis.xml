@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE adatbazis SYSTEM "KD_adatbazis.dtd">
+<adatbazis>
+    <dolgozo kod="a01">
+        <nev>Nagy Ádám</nev>
+        <fizetes>420</fizetes>
+    </dolgozo>
+</adatbazis>

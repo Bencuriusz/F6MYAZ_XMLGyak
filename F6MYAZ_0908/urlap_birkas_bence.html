@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Feldolgozó php</title>
+    <meta charset="UTF-8">
+	<style>
+		body {
+			background-color: lightblue;
+			font-weight: bold;
+		}
+		
+		div {
+			margin-bottom: 1%;
+		}
+	</style>
+</head>
+
+<body>
+
+    <form action="/feldolgozo.php" method="POST">
+        <div>
+            <label for="nev">Név:</label>
+            <input id="nev" type="text" name="nev" placeholder="Írd be a neved"/>
+        </div>
+
+        <div>
+            <label for="kod">PIN kód:</label>
+            <input id="kod" type="password" name="kod" placeholder="Írd be a pin kódod"/>
+        </div>
+
+        <div>
+            <label for="gyumolcs">Kedvenc gyümölcs:</label>
+            <input id="gyumolcs" type="text" name="gyumolcs" placeholder="Írd be a kedvenc gyümölcsöd"/>
+        </div>
+
+        <div>
+            <label for="eletkor">Életor:</label>
+            <input id="eletkor" type="number" min="0" name="eletkor" placeholder="Írd be az életkorod"/>
+        </div>
+
+        <div>
+            <label for="labmeret">Lábméret:</label>
+            <input id="labmeret" type="number" name="labmeret" placeholder="Írd be a lábméreted"/>
+        </div>
+
+        <div>
+            <label for="onbizalom">Önbizalom:</label>
+            0 <input id="onbizalom" type="range" min="0" max="100" name="onbizalom" /> 100
+        </div>
+
+        <div>
+            <button type="submit">Elküldöm</button>
+            <button type="submit" formnovalidate="formnovalidate" >Elküldöm ellenőrzés nélkül</button>
+			 
+        </div>
+
+    </form>
+
+    <!--
+    <?php
+	echo ("<strong>Név:</strong>" . $_POST['nev'] . "<br><br>");
+
+	echo ("<strong>PIN kód:</strong>" . $_POST['kod'] . "<br><br>");
+
+	echo ("<strong>Gyümölcs:</strong>" . $_POST['gyumolcs'] . "<br><br>");
+
+	echo ("<strong>Életkor:</strong>" . $_POST['eletkor'] . "<br><br>");
+
+	echo ("<strong>Lábméret:</strong>" . $_POST['labmeret'] . "<br><br>");
+
+	echo ("<strong>Önbizalom:</strong>" . $_POST['onbizalom'] . "<br><br>");
+
+	?> -->
+</body>
+
+</html>
