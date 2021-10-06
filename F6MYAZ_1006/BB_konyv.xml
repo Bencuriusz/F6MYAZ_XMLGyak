@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BB_konyv.xsd">
+
+    <konyv id="k01">
+        <cim>
+         Grafikus és játékalkalmazások programozása       
+         </cim>
+        <ev>2017</ev>
+        <kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
+        <szerzo>Fehér Krisztián</szerzo>
+        <kivonat>kivonat</kivonat>
+    </konyv>
+    <konyv id="k02">
+        <cim>
+            PHP és MySQL az alapoktól       
+        </cim>
+        <ev>2011</ev>
+        <kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
+        <szerzo>Kozmajer Viktor</szerzo>
+        <kivonat>kivonat</kivonat>
+    </konyv>
+    <konyv id="k03">
+        <cim>
+            The Pragmatic Programmer: From Journeyman to Master
+        </cim>
+        <ev>1999</ev>
+        <kiado>Addison-Wesley Professional</kiado>
+        <szerzo>David Thomas</szerzo>
+        <szerzo>Andrew Hun</szerzo>
+        <kivonat>kivonat</kivonat>
+    </konyv>
+
+</konyvek>
