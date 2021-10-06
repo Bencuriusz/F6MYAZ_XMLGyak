@@ -3,13 +3,13 @@
     <xs:element name="konyvek">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="konyv">
+                <xs:element name="konyv" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="cim" type="xs:string" />
                             <xs:element name="ev" type="xs:unsignedShort" />
                             <xs:element name="kiado" type="xs:string" />
-                            <xs:element name="iro" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="szerzo" type="xs:string" maxOccurs="unbounded" />
                             <xs:element name="kivonat" type="xs:string" />
                         </xs:sequence>
                         <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
