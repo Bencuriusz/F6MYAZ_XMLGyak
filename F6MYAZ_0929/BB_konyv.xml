@@ -8,9 +8,8 @@
          </cim>
         <ev>2017</ev>
         <kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
-        <szerzok>
-            <szerzo>Fehér Krisztián</szerzo>
-        </szerzok>
+        <szerzo>Fehér Krisztián</szerzo>
+        <kivonat>kivonat</kivonat>
     </konyv>
     <konyv id="k02">
         <cim>
@@ -18,9 +17,8 @@
         </cim>
         <ev>2011</ev>
         <kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
-        <szerzok>
-            <szerzo>Kozmajer Viktor</szerzo>
-        </szerzok>
+        <szerzo>Kozmajer Viktor</szerzo>
+        <kivonat>kivonat</kivonat>
     </konyv>
     <konyv id="k03">
         <cim>
@@ -28,9 +26,8 @@
         </cim>
         <ev>1999</ev>
         <kiado>Addison-Wesley Professional</kiado>
-        <szerzok>
-            <szerzo>David Thomas</szerzo>
-            <szerzo>Andrew Hun</szerzo>
-        </szerzok>
+        <szerzo>David Thomas</szerzo>
+        <szerzo>Andrew Hun</szerzo>
+        <kivonat>kivonat</kivonat>
     </konyv>
 </konyvek>
