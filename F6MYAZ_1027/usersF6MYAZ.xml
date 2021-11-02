@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-    <user id="01">
-        <firstname>Bence</firstname>
-        <lastname>Birkas</lastname>
-        <profession>Programmer</profession>
-    </user>
-    <user id="02">
-        <firstname>Illyes</firstname>
-        <lastname>Adam</lastname>
-        <profession>Lawyer</profession>
-    </user>
-    <user id="03">
-        <firstname>Nagy</firstname>
-        <lastname>Lajos</lastname>
-        <profession>Trucker</profession>
-    </user>
-
+<!DOCTYPE users SYSTEM "usersF6MYAZ.dtd">
+<users>
+    <user id="u1" firstname="Bence" lastname="Birkás" profession="programer"></user>
+    <user id="u2" firstname="Ádám" lastname="Illyés" profession="lawyer"></user>
 </users>
