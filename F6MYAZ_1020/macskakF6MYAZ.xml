@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<!DOCTYPE macskak SYSTEM "macskakB00P5Y.dtd"> -->
+
+<!--<macskak>-->
+<macskak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="macskakF6MYAZ.xsd">
+    <macska id="m1">
+        <nev>Frici</nev>
+        <kor>3.5</kor>
+        <fajta>Házi macska</fajta>
+    </macska>
+</macskak>
