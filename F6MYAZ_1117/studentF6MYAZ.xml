@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="studentF6MYAZ.xsl"?>
+
+<class>
+    <student id="01">
+        <firstname>Bence</firstname>
+        <lastname>Birkás</lastname>
+        <nickname>Bence</nickname>
+        <age>22</age>
+        <salary>300000</salary>
+    </student>
+    <student id="02">
+        <firstname>Ádám</firstname>
+        <lastname>Kiss</lastname>
+        <nickname>Ádi</nickname>
+        <age>22</age>
+        <salary>600000</salary>
+    </student>
+    <student id="03">
+        <firstname>Levente</firstname>
+        <lastname>Kapitány</lastname>
+        <nickname>Levi</nickname>
+        <age>21</age>
+        <salary>220000</salary>
+    </student>
+</class>
