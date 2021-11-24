@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <body>
+        <h2>Hallgatok apple-template</h2>
+        <p>
+            ID:
+            <span style="color:#000000">01</span>
+            <br />
+            First name:
+            <span style="color:#00FF00">Bence</span>
+            <br />
+            Last name:
+            <span style="color:#FF0000">Birkás</span>
+            <br />
+            Bence
+        Kor:
+            <span style="color:#0000FF">22</span>
+            <br />
+            Salary:
+            <span style="color:#FF0000">300000</span>
+            <br />
+        </p>
+        <p>
+            ID:
+            <span style="color:#000000">02</span>
+            <br />
+            First name:
+            <span style="color:#00FF00">Ádám</span>
+            <br />
+            Last name:
+            <span style="color:#FF0000">Kiss</span>
+            <br />
+            Ádi
+        Kor:
+            <span style="color:#0000FF">22</span>
+            <br />
+            Salary:
+            <span style="color:#FF0000">600000</span>
+            <br />
+        </p>
+        <p>
+            ID:
+            <span style="color:#000000">03</span>
+            <br />
+            First name:
+            <span style="color:#00FF00">Levente</span>
+            <br />
+            Last name:
+            <span style="color:#FF0000">Kapitány</span>
+            <br />
+            Levi
+        Kor:
+            <span style="color:#0000FF">21</span>
+            <br />
+            Salary:
+            <span style="color:#FF0000">220000</span>
+            <br />
+        </p>
+    </body>
+</html>
