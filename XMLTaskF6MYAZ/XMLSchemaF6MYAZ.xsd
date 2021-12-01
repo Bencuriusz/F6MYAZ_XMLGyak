@@ -6,7 +6,7 @@
                 <xs:element name="dolgozok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="dolgozo">
+                            <xs:element name="dolgozo" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:attribute name="admin_id" use="required" />
                                     <xs:attribute name="orvos_id" use="required" />
@@ -19,7 +19,7 @@
                 <xs:element name="recepciosok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="recepcios">
+                            <xs:element name="recepcios" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nev" type="xs:string" />
@@ -35,7 +35,7 @@
                 <xs:element name="adminok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="admin">
+                            <xs:element name="admin" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nev" type="xs:string" />
@@ -51,7 +51,7 @@
                 <xs:element name="rendelesi_idok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="rendelesi_ido">
+                            <xs:element name="rendelesi_ido" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="rendelesi_ido" type="xs:string" />
@@ -66,13 +66,13 @@
                 <xs:element name="orvosok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="orvos">
+                            <xs:element name="orvos" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nev" type="xs:string" />
                                         <xs:element name="email_cim" type="xs:string" />
                                         <xs:element name="jelszo" type="xs:string" />
-                                        <xs:element name="elerheto" type="xs:string" />
+                                        <xs:element name="elerheto" type="xs:boolean" />
                                     </xs:sequence>
                                     <xs:attribute name="orvos_id" use="required" />
                                     <xs:attribute name="idopont_id" use="required" />
@@ -84,12 +84,12 @@
                 <xs:element name="idopont_foglalasok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="idopont_foglalas">
+                            <xs:element name="idopont_foglalas" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="datum" type="xs:string" />
+                                        <xs:element name="datum" type="xs:date" />
                                         <xs:element name="pontos_idopont" type="xs:string" />
-                                        <xs:element name="idotartam" type="xs:string" />
+                                        <xs:element name="idotartam" type="xs:decimal" />
                                     </xs:sequence>
                                     <xs:attribute name="idopont_id" use="required" />
                                 </xs:complexType>
@@ -100,10 +100,10 @@
                 <xs:element name="pac-gyogy-ek">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="pac-gyogy">
+                            <xs:element name="pac-gyogy" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="feliras_datuma" type="xs:string" />
+                                        <xs:element name="feliras_datuma" type="xs:date" />
                                     </xs:sequence>
                                     <xs:attribute name="p_gy_id" use="required" />
                                 </xs:complexType>
@@ -114,13 +114,13 @@
                 <xs:element name="paciensek">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="paciens">
+                            <xs:element name="paciens" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nev" type="xs:string" />
                                         <xs:element name="email_cim" type="xs:string" />
                                         <xs:element name="jelszo" type="xs:string" />
-                                        <xs:element name="szuletesi_ido" type="xs:string" />
+                                        <xs:element name="szuletesi_ido" type="xs:date" />
                                         <xs:element name="szuletesi_hely" type="xs:string" />
                                         <xs:element name="taj_szam" type="xs:string" />
                                         <xs:element name="lakcim">
@@ -128,7 +128,7 @@
                                                 <xs:sequence>
                                                     <xs:element name="varos" type="xs:string" />
                                                     <xs:element name="utca_es_hazszam" type="xs:string" />
-                                                    <xs:element name="iranyitoszam" type="xs:string" />
+                                                    <xs:element name="iranyitoszam" type="iranyitomszam" />
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -143,10 +143,10 @@
                 <xs:element name="gyogyszerek">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="gyogyszer">
+                            <xs:element name="gyogyszer" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="ar" type="xs:string" />
+                                        <xs:element name="ar" type="xs:decimal" />
                                         <xs:element name="nev" type="xs:string" />
                                         <xs:element name="leiras" type="xs:string" />
                                     </xs:sequence>
@@ -159,10 +159,10 @@
                 <xs:element name="pac-bet-ek">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="pac-bet">
+                            <xs:element name="pac-bet" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="idotartam" type="xs:string" />
+                                        <xs:element minOccurs="0" name="idotartam" type="xs:string" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -172,7 +172,7 @@
                 <xs:element name="betegsegek">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="betegseg">
+                            <xs:element name="betegseg" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nev" type="xs:string" />
@@ -187,4 +187,10 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:simpleType name="iranyitomszam">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1000"></xs:minInclusive>
+            <xs:maxInclusive value="9999"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

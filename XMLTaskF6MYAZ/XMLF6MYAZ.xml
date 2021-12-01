@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLF6MYAZ.xsd">
+<?xml-model href="XMLSchemaF6MYAZ.xsd"?>
+<root>
     <dolgozok>
         <dolgozo admin_id="a1" orvos_id="o1" recepcios_id="rec1"></dolgozo>
     </dolgozok>
@@ -28,19 +29,19 @@
             <nev>Major Júlia</nev>
             <email_cim>majorjulia@hospital.hu</email_cim>
             <jelszo>jkáádkiopbh49</jelszo>
-            <elerheto>igen</elerheto>
+            <elerheto>true</elerheto>
         </orvos>
     </orvosok>
     <idopont_foglalasok>
         <idopont_foglalas idopont_id="i1">
-            <datum>2021.12.01.</datum>
+            <datum>2021-12-01</datum>
             <pontos_idopont>14:00</pontos_idopont>
             <idotartam>30</idotartam>
         </idopont_foglalas>
     </idopont_foglalasok>
     <pac-gyogy-ek>
         <pac-gyogy p_gy_id="p-gy1">
-            <feliras_datuma>2021.11.14.</feliras_datuma>
+            <feliras_datuma>2021-11-14</feliras_datuma>
         </pac-gyogy>
     </pac-gyogy-ek>
     <paciensek>
@@ -48,7 +49,7 @@
             <nev>Balázs Dorottya</nev>
             <email_cim>balazsdorottya@hospital.hu</email_cim>
             <jelszo>892bz549o2t67gg8gwr</jelszo>
-            <szuletesi_ido>1986.01.08</szuletesi_ido>
+            <szuletesi_ido>1986-01-08</szuletesi_ido>
             <szuletesi_hely>Budapest</szuletesi_hely>
             <taj_szam>532689741</taj_szam>
             <lakcim>
@@ -67,7 +68,7 @@
     </gyogyszerek>
     <pac-bet-ek>
         <pac-bet>
-            <idotartam>???</idotartam>
+            <idotartam>3 nap</idotartam>
         </pac-bet>
     </pac-bet-ek>
     <betegsegek>
