@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dolgozok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dolgozo">
+                                <xs:complexType>
+                                    <xs:attribute name="admin_id" use="required" />
+                                    <xs:attribute name="orvos_id" use="required" />
+                                    <xs:attribute name="recepcios_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="recepciosok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="recepcios">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev" type="xs:string" />
+                                        <xs:element name="email_cim" type="xs:string" />
+                                        <xs:element name="jelszo" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="recepcios_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="adminok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="admin">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev" type="xs:string" />
+                                        <xs:element name="email_cim" type="xs:string" />
+                                        <xs:element name="jelszo" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="admin_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="rendelesi_idok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="rendelesi_ido">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="rendelesi_ido" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="rend_id" use="required" />
+                                    <xs:attribute name="orvos_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="orvosok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="orvos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev" type="xs:string" />
+                                        <xs:element name="email_cim" type="xs:string" />
+                                        <xs:element name="jelszo" type="xs:string" />
+                                        <xs:element name="elerheto" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="orvos_id" use="required" />
+                                    <xs:attribute name="idopont_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="idopont_foglalasok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="idopont_foglalas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="datum" type="xs:string" />
+                                        <xs:element name="pontos_idopont" type="xs:string" />
+                                        <xs:element name="idotartam" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="idopont_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pac-gyogy-ek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pac-gyogy">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="feliras_datuma" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="p_gy_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="paciensek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="paciens">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev" type="xs:string" />
+                                        <xs:element name="email_cim" type="xs:string" />
+                                        <xs:element name="jelszo" type="xs:string" />
+                                        <xs:element name="szuletesi_ido" type="xs:string" />
+                                        <xs:element name="szuletesi_hely" type="xs:string" />
+                                        <xs:element name="taj_szam" type="xs:string" />
+                                        <xs:element name="lakcim">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="varos" type="xs:string" />
+                                                    <xs:element name="utca_es_hazszam" type="xs:string" />
+                                                    <xs:element name="iranyitoszam" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="paciens_id" use="required" />
+                                    <xs:attribute name="idopont_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="gyogyszerek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="gyogyszer">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ar" type="xs:string" />
+                                        <xs:element name="nev" type="xs:string" />
+                                        <xs:element name="leiras" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="gyogyszer_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pac-bet-ek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pac-bet">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="idotartam" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="betegsegek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="betegseg">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev" type="xs:string" />
+                                        <xs:element name="leiras" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="betegseg_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
