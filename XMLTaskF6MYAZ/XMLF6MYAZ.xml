@@ -3,7 +3,7 @@
 <?xml-model href="XMLSchemaF6MYAZ.xsd"?>
 <root>
     <dolgozok>
-        <dolgozo admin_id="a1" orvos_id="o1" recepcios_id="rec1"></dolgozo>
+        <dolgozo admin_id="a1" orvos_id="o1" recepcios_id="rec1" dolgozo_id="d1"></dolgozo>
     </dolgozok>
     <recepciosok>
         <recepcios recepcios_id="rec1">
@@ -66,7 +66,7 @@
         </gyogyszer>
     </gyogyszerek>
     <pac-bet-ek>
-        <pac-bet>
+        <pac-bet p_b_id="pb1">
             <idotartam>3 nap</idotartam>
         </pac-bet>
     </pac-bet-ek>

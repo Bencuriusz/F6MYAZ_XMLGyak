@@ -11,6 +11,7 @@
                                     <xs:attribute name="admin_id" use="required" />
                                     <xs:attribute name="orvos_id" use="required" />
                                     <xs:attribute name="recepcios_id" use="required" />
+                                    <xs:attribute name="dolgozo_id" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -164,6 +165,7 @@
                                     <xs:sequence>
                                         <xs:element minOccurs="0" name="idotartam" type="xs:string" />
                                     </xs:sequence>
+                                    <xs:attribute name="p_b_id" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -200,7 +202,7 @@
         </xs:key>
         <xs:key name="PK_rendelesi_ido">
             <xs:selector xpath="rendelesi_idok/rendelesi_ido"></xs:selector>
-            <xs:field xpath="@rend_ido_id"></xs:field>
+            <xs:field xpath="@rend_id"></xs:field>
         </xs:key>
         <xs:key name="PK_orvos">
             <xs:selector xpath="orvosok/orvos"></xs:selector>
