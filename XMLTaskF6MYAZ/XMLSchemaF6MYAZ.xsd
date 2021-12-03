@@ -122,7 +122,6 @@
                                         <xs:element name="jelszo" type="xs:string" />
                                         <xs:element name="szuletesi_ido" type="xs:date" />
                                         <xs:element name="szuletesi_hely" type="xs:string" />
-                                        <xs:element name="taj_szam" type="xs:string" />
                                         <xs:element name="lakcim">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -133,6 +132,7 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
+                                    <xs:attribute name="taj_szam" type="xs:string" use="required"></xs:attribute>
                                     <xs:attribute name="paciens_id" use="required" />
                                     <xs:attribute name="idopont_id" use="required" />
                                 </xs:complexType>
@@ -186,6 +186,74 @@
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="PK_dolgozo">
+            <xs:selector xpath="dolgozok/dolgozo"></xs:selector>
+            <xs:field xpath="@dolgozo_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_recepcios">
+            <xs:selector xpath="recepciosok/recepcios"></xs:selector>
+            <xs:field xpath="@recepcios_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_admin">
+            <xs:selector xpath="adminok/admin"></xs:selector>
+            <xs:field xpath="@admin_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_rendelesi_ido">
+            <xs:selector xpath="rendelesi_idok/rendelesi_ido"></xs:selector>
+            <xs:field xpath="@rend_ido_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_orvos">
+            <xs:selector xpath="orvosok/orvos"></xs:selector>
+            <xs:field xpath="@orvos_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_idopont_foglalas">
+            <xs:selector xpath="idopont_foglalasok/idopont_foglalas"></xs:selector>
+            <xs:field xpath="@idopont_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_pac-gyogy">
+            <xs:selector xpath="pac-gyogy-ek/pac-gyogy"></xs:selector>
+            <xs:field xpath="@p_gy_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_paciens">
+            <xs:selector xpath="paciensek/paciens"></xs:selector>
+            <xs:field xpath="@paciens_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_gyogyszer">
+            <xs:selector xpath="gyogyszerek/gyogyszer"></xs:selector>
+            <xs:field xpath="@gyogyszer_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_pac-bet">
+            <xs:selector xpath="pac-bet-ek/pac-bet"></xs:selector>
+            <xs:field xpath="@p_b_id"></xs:field>
+        </xs:key>
+        <xs:key name="PK_betegseg">
+            <xs:selector xpath="betegsegek/betegseg"></xs:selector>
+            <xs:field xpath="@betegseg_id"></xs:field>
+        </xs:key>
+        <xs:keyref name="FK_dolgozo-admin" refer="PK_admin">
+            <xs:selector xpath="dolgozok/dolgozo"></xs:selector>
+            <xs:field xpath="@admin_id"></xs:field>
+        </xs:keyref>
+        <xs:keyref name="FK_dolgozo-orvos" refer="PK_orvos">
+            <xs:selector xpath="dolgozok/dolgozo"></xs:selector>
+            <xs:field xpath="@orvos_id"></xs:field>
+        </xs:keyref>
+        <xs:keyref name="FK_dolgozo-recepcios" refer="PK_recepcios">
+            <xs:selector xpath="dolgozok/dolgozo"></xs:selector>
+            <xs:field xpath="@recepcios_id"></xs:field>
+        </xs:keyref>
+        <xs:keyref name="FK_rend_ido-orvos" refer="PK_orvos">
+            <xs:selector xpath="rendelesi_idok/rendelesi_ido"></xs:selector>
+            <xs:field xpath="@orvos_id"></xs:field>
+        </xs:keyref>
+        <xs:keyref name="FK_orvos-idopont" refer="PK_idopont_foglalas">
+            <xs:selector xpath="orvosok/orvos"></xs:selector>
+            <xs:field xpath="@idopont_id"></xs:field>
+        </xs:keyref>
+        <xs:keyref name="FK_paciens-idopont" refer="PK_idopont_foglalas">
+            <xs:selector xpath="paciensek/paciens"></xs:selector>
+            <xs:field xpath="@idopont_id"></xs:field>
+        </xs:keyref>
     </xs:element>
     <xs:simpleType name="iranyitomszam">
         <xs:restriction base="xs:positiveInteger">
