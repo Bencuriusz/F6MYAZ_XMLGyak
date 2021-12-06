@@ -8,9 +8,9 @@
                         <xs:sequence>
                             <xs:element name="dolgozo" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
-                                    <xs:attribute name="admin_id" use="required" />
-                                    <xs:attribute name="orvos_id" use="required" />
-                                    <xs:attribute name="recepcios_id" use="required" />
+                                    <xs:attribute name="admin_id" />
+                                    <xs:attribute name="orvos_id" />
+                                    <xs:attribute name="recepcios_id" />
                                     <xs:attribute name="dolgozo_id" use="required" />
                                 </xs:complexType>
                             </xs:element>

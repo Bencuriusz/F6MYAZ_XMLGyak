@@ -1,130 +1,255 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <?xml-model href="XMLSchemaF6MYAZ.xsd"?>
 <root>
+
     <dolgozok>
-        <dolgozo admin_id="a1" dolgozo_id="d1"></dolgozo>
-        <dolgozo orvos_id="o1" dolgozo_id="d2"></dolgozo>
-        <dolgozo recepcios_id="rec1" dolgozo_id="d3"></dolgozo>
-        <dolgozo recepcios_id="rec2" dolgozo_id="d4"></dolgozo>
-        <dolgozo recepcios_id="rec3" dolgozo_id="d5"></dolgozo>
+
+        <dolgozo admin_id="a1" dolgozo_id="d1" />
+
+        <dolgozo dolgozo_id="d2" orvos_id="o1" />
+
+        <dolgozo dolgozo_id="d3" recepcios_id="rec1" />
+
+        <dolgozo dolgozo_id="d4" recepcios_id="rec2" />
+
+        <dolgozo dolgozo_id="d5" recepcios_id="rec3" />
+
     </dolgozok>
+
     <recepciosok>
+
         <recepcios recepcios_id="rec1">
+
             <nev>Soós Péter</nev>
+
             <email_cim>soospeter@hospital.hu</email_cim>
+
             <jelszo>ot4hvpih35</jelszo>
+
         </recepcios>
+
         <recepcios recepcios_id="rec2">
+
             <nev>Vincze Erik</nev>
+
             <email_cim>vinczeerik@hospital.hu</email_cim>
+
             <jelszo>rj56uh645w</jelszo>
+
         </recepcios>
+
         <recepcios recepcios_id="rec3">
+
             <nev>Kis Kitti</nev>
+
             <email_cim>kiskitti@hospital.hu</email_cim>
+
             <jelszo>5nbe5junwzqvaere68</jelszo>
+
         </recepcios>
+
     </recepciosok>
+
     <adminok>
+
         <admin admin_id="a1">
+
             <nev>Bodnár Gábor</nev>
+
             <email_cim>bodnargabor@hospital.hu</email_cim>
+
             <jelszo>i5vuhngioq5vhg</jelszo>
+
         </admin>
+
     </adminok>
+
     <rendelesi_idok>
-        <rendelesi_ido rend_id="ren1" orvos_id="o1">
+
+        <rendelesi_ido orvos_id="o1" rend_id="ren1">
+
             <rendelesi_ido>8:00-14:00</rendelesi_ido>
+
         </rendelesi_ido>
-        <rendelesi_ido rend_id="ren2" orvos_id="o1">
+
+        <rendelesi_ido orvos_id="o1" rend_id="ren2">
+
             <rendelesi_ido>9:00-17:00</rendelesi_ido>
+
         </rendelesi_ido>
+
     </rendelesi_idok>
+
     <orvosok>
-        <orvos orvos_id="o1" idopont_id="i1">
-            <nev>Major Júlia</nev>
+
+        <orvos idopont_id="i1" orvos_id="o1">
+
+            <nev>Új név</nev>
+
             <email_cim>majorjulia@hospital.hu</email_cim>
+
             <jelszo>jkáádkiopbh49</jelszo>
+
             <elerheto>true</elerheto>
+
         </orvos>
+
     </orvosok>
+
     <idopont_foglalasok>
+
         <idopont_foglalas idopont_id="i1">
+
             <datum>2021-12-01</datum>
+
             <pontos_idopont>14:00</pontos_idopont>
+
             <idotartam>30</idotartam>
+
         </idopont_foglalas>
+
         <idopont_foglalas idopont_id="i2">
+
             <datum>2021-12-06</datum>
+
             <pontos_idopont>08:00</pontos_idopont>
+
             <idotartam>60</idotartam>
+
         </idopont_foglalas>
+
         <idopont_foglalas idopont_id="i3">
+
             <datum>2021-12-18</datum>
+
             <pontos_idopont>12:00</pontos_idopont>
+
             <idotartam>15</idotartam>
+
         </idopont_foglalas>
+
     </idopont_foglalasok>
+
     <pac-gyogy-ek>
+
         <pac-gyogy p_gy_id="p-gy1">
+
             <feliras_datuma>2021-11-14</feliras_datuma>
+
         </pac-gyogy>
+
     </pac-gyogy-ek>
+
     <paciensek>
-        <paciens taj_szam="532689741" paciens_id="p1" idopont_id="i1">
+
+        <paciens idopont_id="i1" paciens_id="p1" taj_szam="532689741">
+
             <nev>Balázs Dorottya</nev>
+
             <email_cim>balazsdorottya@gmail.com</email_cim>
+
             <jelszo>892bz549o2t67gg8gwr</jelszo>
+
             <szuletesi_ido>1986-01-08</szuletesi_ido>
+
             <szuletesi_hely>Budapest</szuletesi_hely>
+
             <lakcim>
+
                 <varos>Budapest</varos>
+
                 <utca_es_hazszam>Erzsébet krt. 11.</utca_es_hazszam>
+
                 <iranyitoszam>1073</iranyitoszam>
+
             </lakcim>
+
         </paciens>
-        <paciens taj_szam="112334456" paciens_id="p2" idopont_id="i2">
+
+        <paciens idopont_id="i2" paciens_id="p2" taj_szam="112334456">
+
             <nev>Biró Benedek</nev>
+
             <email_cim>birobenedek@gmail.com</email_cim>
+
             <jelszo>hbsthn</jelszo>
+
             <szuletesi_ido>1999-12-28</szuletesi_ido>
+
             <szuletesi_hely>Miskolc</szuletesi_hely>
+
             <lakcim>
+
                 <varos>Miskolc</varos>
+
                 <utca_es_hazszam>Arany János utca 28.</utca_es_hazszam>
+
                 <iranyitoszam>3530</iranyitoszam>
+
             </lakcim>
+
         </paciens>
-        <paciens taj_szam="998776554" paciens_id="p3" idopont_id="i3">
+
+        <paciens idopont_id="i3" paciens_id="p3" taj_szam="998776554">
+
             <nev>Hajdú Gyula</nev>
+
             <email_cim>hajdugyula@gmail.com</email_cim>
+
             <jelszo>wgrg</jelszo>
+
             <szuletesi_ido>1970-08-11</szuletesi_ido>
+
             <szuletesi_hely>Nyíregyháza</szuletesi_hely>
+
             <lakcim>
+
                 <varos>Tiszaújváros</varos>
+
                 <utca_es_hazszam>Szent István út 47.</utca_es_hazszam>
+
                 <iranyitoszam>3550</iranyitoszam>
+
             </lakcim>
+
         </paciens>
+
     </paciensek>
+
     <gyogyszerek>
+
         <gyogyszer gyogyszer_id="gy1">
+
             <ar>16000</ar>
+
             <nev>Nasivin</nev>
+
             <leiras>Orrcsepp</leiras>
+
         </gyogyszer>
+
     </gyogyszerek>
+
     <pac-bet-ek>
+
         <pac-bet p_b_id="pb1">
+
             <idotartam>3 nap</idotartam>
+
         </pac-bet>
+
     </pac-bet-ek>
+
     <betegsegek>
+
         <betegseg betegseg_id="b1">
+
             <nev>Megfázás</nev>
+
             <leiras>Megfázás leírása</leiras>
+
         </betegseg>
+
     </betegsegek>
+
 </root>
