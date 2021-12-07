@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BB_nevjegykartya.xsd">
+    <nevjegykartya>
+        <nev>Birkás Bence</nev>
+        <ceg>
+            <nev>Vie Europe</nev>
+            <cim>
+                <iranyitoszam>1234</iranyitoszam>
+                <varos>Budapest</varos>
+                <utca>elte melletti utca idk</utca>
+                <hazszam>1</hazszam>
+            </cim>
+            <telefonszam>+362047583922</telefonszam>
+            <weblap>www.vieeurope.com</weblap>
+        </ceg>
+        <beosztas>gyakornok</beosztas>
+        <telefonszam>+36301234567</telefonszam>
+        <email>birkasbence@vie.com</email>
+    </nevjegykartya>
+    <nevjegykartya>
+        <nev>ads dasd</nev>
+        <ceg>
+            <nev>adsa</nev>
+            <cim>
+                <iranyitoszam>1232</iranyitoszam>
+                <varos>adsda</varos>
+                <utca>asd utca</utca>
+                <hazszam>2</hazszam>
+            </cim>
+            <telefonszam>+36301234567</telefonszam>
+            <weblap>www.effdead.hu</weblap>
+        </ceg>
+        <beosztas>Gyakornok</beosztas>
+        <telefonszam>+36301234568</telefonszam>
+        <email>fwef@gmail.com</email>
+    </nevjegykartya>
+</nevjegykartyak>
