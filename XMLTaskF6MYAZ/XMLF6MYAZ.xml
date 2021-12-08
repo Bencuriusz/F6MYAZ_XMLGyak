@@ -67,7 +67,7 @@
         </idopont_foglalas>
     </idopont_foglalasok>
     <pac-gyogy-ek>
-        <pac-gyogy p_gy_id="p-gy1">
+        <pac-gyogy p_gy_id="p-gy1" paciens_id="p1" gyogyszer_id="gy1">
             <feliras_datuma>2021-11-14</feliras_datuma>
         </pac-gyogy>
     </pac-gyogy-ek>
@@ -117,7 +117,7 @@
         </gyogyszer>
     </gyogyszerek>
     <pac-bet-ek>
-        <pac-bet p_b_id="pb1">
+        <pac-bet p_b_id="pb1" paciens_id="p1" betegseg_id="b1">
             <idotartam>3 nap</idotartam>
         </pac-bet>
     </pac-bet-ek>
@@ -127,4 +127,7 @@
             <leiras>Megfázás leírása</leiras>
         </betegseg>
     </betegsegek>
+    <uj_kapcsolatok>
+        <uj_kapcsolat uj_kapcs_id="uj1" admin_id="a1" recepcios_id="rec1"></uj_kapcsolat>
+    </uj_kapcsolatok>
 </root>

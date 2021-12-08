@@ -107,6 +107,8 @@
                                         <xs:element name="feliras_datuma" type="xs:date" />
                                     </xs:sequence>
                                     <xs:attribute name="p_gy_id" use="required" />
+                                    <xs:attribute name="paciens_id" />
+                                    <xs:attribute name="gyogyszer_id" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -166,6 +168,8 @@
                                         <xs:element minOccurs="0" name="idotartam" type="xs:string" />
                                     </xs:sequence>
                                     <xs:attribute name="p_b_id" use="required" />
+                                    <xs:attribute name="paciens_id" />
+                                    <xs:attribute name="betegseg_id" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -181,6 +185,19 @@
                                         <xs:element name="leiras" type="xs:string" />
                                     </xs:sequence>
                                     <xs:attribute name="betegseg_id" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="uj_kapcsolatok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="uj_kapcsolat" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="admin_id" />
+                                    <xs:attribute name="recepcios_id" />
+                                    <xs:attribute name="uj_kapcs_id" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
